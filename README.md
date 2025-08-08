@@ -4,7 +4,7 @@
 
 ## Демо
 
-Приложение доступно онлайн по адресу: [https://simple-stripe.ru](https://simple-stripe.ru)
+Приложение доступно онлайн по адресу: [https://simple-stripe.ru/item/1](https://simple-stripe.ru/item/1)
 
 **Данные для входа в админку:**
 - Логин: `admin`
@@ -13,7 +13,7 @@
 ## Локальная установка
 
 ### Требования
-- Python 3.8+
+- Python 3.12
 - PostgreSQL
 - Stripe API ключи (можно получить на [stripe.com](https://stripe.com))
 - pip
@@ -65,12 +65,7 @@ python manage.py createsuperuser
 ```
 (укажите логин `admin` и пароль `admin` или свои данные)
 
-8. (Опционально) Заполните базу тестовыми данными:
-```bash
-python manage.py loaddata fixtures.json
-```
-
-9. Запустите сервер разработки:
+8. Запустите сервер разработки:
 ```bash
 python manage.py runserver
 ```

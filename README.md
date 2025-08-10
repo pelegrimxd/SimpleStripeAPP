@@ -16,14 +16,6 @@
 
 ## Локальная установка
 
-### Требования
-- Python 3.8+
-- PostgreSQL
-- Stripe API ключи (можно получить на [stripe.com](https://stripe.com))
-- pip
-
-### Инструкция по установке
-
 1. Клонируйте репозиторий:
 ```bash
 git clone https://github.com/pelegrimxd/SimpleStripeAPP.git

@@ -8,6 +8,7 @@ import stripe
 stripe.api_key = settings.API_SECRET_KEY
 
 def buy_item(request, id):
+    """Ручка для создания сессии оплаты на сервисе Stripe"""
     item = get_object_or_404(Item, pk=id)
     session = stripe.checkout.Session.create(
         payment_method_types=['card'],
@@ -28,6 +29,7 @@ def buy_item(request, id):
     return JsonResponse({'session_id': session.id})
 
 def item_detail(request, id):
+    """"Ручка страницы товара"""
     item = get_object_or_404(Item, pk=id)
     context = {
         'item': item,
@@ -36,4 +38,5 @@ def item_detail(request, id):
     return render(request, 'item_detail.html', context)
 
 def payment_success(request):
+    """Ручкка для удачной оплаты"""
     return render(request, 'success.html')

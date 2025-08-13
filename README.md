@@ -4,7 +4,7 @@
 
 ## Демо
 
-Приложение доступно онлайн по адресу: [https://simple-stripe.ru](https://simple-stripe.ru)
+Приложение доступно онлайн по адресу: [https://simple-stripe.ru](https://simple-stripe.ru/item/1)
 
 **Данные для входа в админку:**
 - Логин: `admin`
